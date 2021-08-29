@@ -152,7 +152,8 @@ nav a {
 	transition: background-color .2s ease-in, color .2s ease-in;
 }
 nav a:hover,
-.active {
+.active,
+nav a:focus {
 	background-color: rgb(206, 32, 32);
 	color: white;
 }
@@ -214,7 +215,8 @@ h1 {
 	letter-spacing: -.2rem;
 	transition: letter-spacing .2s ease-in, color .2s ease-in;
 }
-.textCard a:hover {
+.textCard a:hover,
+.textCard a:focus {
 	letter-spacing: .2rem;
 }
 .topTag,
@@ -238,9 +240,14 @@ h1 {
 	position: relative;
 	right: .3rem;
 }
-.textCard a:hover .browse {
+.textCard a:hover .browse,
+.textCard a:focus .browse {
 	color: rgb(206, 32, 32);
 }
-.textCard a:hover .menu {
+.textCard a:hover .menu,
+.textCard a:focus .menu {
 	color: rgb(140, 199, 39);
+}
+:focus {
+	outline: none;
 }
