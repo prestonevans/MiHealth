@@ -118,6 +118,8 @@ a {
 	font-size: 100%;
 	vertical-align: baseline;
 	background: transparent;
+	text-decoration: none;
+	font-size: 2rem;
 }
 
 table {
@@ -131,12 +133,14 @@ select {
 }
 body {
 	font-family: sans-serif;
+	background-color: rgb(224, 224, 224);
 }
 nav {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	padding: 0 4rem;
+	padding: 0 6rem;
+	background-color: white;
 }
 nav a {
 	display: inline-block;
@@ -152,6 +156,9 @@ nav a:hover,
 	background-color: rgb(206, 32, 32);
 	color: white;
 }
+.active {
+	cursor: default;
+}
 nav .red {
 	color: rgb(206, 32, 32);
 }
@@ -162,4 +169,47 @@ nav .logo {
 	text-transform: uppercase;
 	font-size: 4rem;
 	font-weight: bold;
+}
+main {
+	padding: 3rem 6rem;
+	display: flex;
+}
+.mealCard,
+.textCard {
+	flex-basis: 500px;
+}
+.mealCard {
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	/* height: 30rem; */
+	position: relative;
+}
+.mealCard:not(:last-child) {
+	margin-right: 1rem;
+}
+h1 {
+	font-size: 4rem;
+	font-weight: bold;
+	margin-bottom: 1rem;
+}
+.textCard {
+	display: flex;
+	flex-flow: column;
+	justify-content: space-between;
+	padding-right: 4rem;
+	padding-bottom: 2rem;
+}
+.textCard p {
+	font-size: 1.7rem;
+	margin-bottom: 2rem;
+}
+.textCard a {
+	color: black;
+	text-transform: uppercase;
+	letter-spacing: -.2rem;
+	transition: letter-spacing .2s ease-in;
+}
+.textCard a:hover {
+	letter-spacing: .2rem;
 }
