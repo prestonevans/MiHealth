@@ -129,3 +129,37 @@ input,
 select {
 	vertical-align: middle;
 }
+body {
+	font-family: sans-serif;
+}
+nav {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 0 4rem;
+}
+nav a {
+	display: inline-block;
+	padding: 1.5rem 1rem;
+	color: rgb(76, 75, 76);
+	text-decoration: none;
+	font-size: 2rem;
+	text-transform: capitalize;
+	transition: background-color .2s ease-in, color .2s ease-in;
+}
+nav a:hover,
+.active {
+	background-color: rgb(206, 32, 32);
+	color: white;
+}
+nav .red {
+	color: rgb(206, 32, 32);
+}
+nav .green {
+	color: rgb(140, 199, 39);
+}
+nav .logo {
+	text-transform: uppercase;
+	font-size: 4rem;
+	font-weight: bold;
+}
