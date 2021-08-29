@@ -212,7 +212,7 @@ h1 {
 	color: black;
 	text-transform: uppercase;
 	letter-spacing: -.2rem;
-	transition: letter-spacing .2s ease-in;
+	transition: letter-spacing .2s ease-in, color .2s ease-in;
 }
 .textCard a:hover {
 	letter-spacing: .2rem;
@@ -237,4 +237,10 @@ h1 {
 	transform: skew(10deg);
 	position: relative;
 	right: .3rem;
+}
+.textCard a:hover .browse {
+	color: rgb(206, 32, 32);
+}
+.textCard a:hover .menu {
+	color: rgb(140, 199, 39);
 }
