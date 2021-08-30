@@ -243,6 +243,8 @@ h1 {
 	transform: skew(-10deg);
 	position: relative;
 	right: .3rem;
+	top: .3rem;
+	z-index: 1;
 }
 .bottomTag {
 	background-color: rgb(140, 199, 39);
