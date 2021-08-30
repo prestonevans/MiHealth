@@ -206,6 +206,14 @@ main {
 .mealCard:not(:last-child) {
 	margin-right: 1rem;
 }
+.mealCard:nth-of-type(2) {
+	border-top-left-radius: 12.5rem;
+	border-bottom-left-radius: 3rem;
+}
+.mealCard:last-of-type {
+	border-bottom-right-radius: 12.5rem;
+	border-top-right-radius: 3rem;
+}
 h1 {
 	font-size: 4rem;
 	font-weight: bold;
