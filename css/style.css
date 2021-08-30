@@ -132,9 +132,13 @@ select {
 	vertical-align: middle;
 }
 body {
+	min-height: 100vh;
 	font-family: sans-serif;
 	background-color: rgb(224, 224, 224);
 	background-image: url('../images/double-bubble-outline.png');
+	display: flex;
+	flex-flow: column;
+	justify-content: space-between;
 }
 nav {
 	display: flex;
@@ -259,4 +263,14 @@ h1 {
 }
 :focus {
 	outline: none;
+}
+footer {
+	width: 100%;
+	background-color: rgb(255, 255, 255);
+	display: flex;
+	justify-content: center;
+}
+footer span {
+	display: inline-block;
+	padding: 2rem 0;
 }
