@@ -134,13 +134,15 @@ select {
 body {
 	font-family: sans-serif;
 	background-color: rgb(224, 224, 224);
+	background-image: url('../images/double-bubble-outline.png');
 }
 nav {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
 	padding: 0 6rem;
-	background-color: white;
+	background-color: rgb(255, 255, 255);
+	box-shadow: 5px 7px 20px 5px rgb(0 0 0 / 19%);
 }
 nav a {
 	display: inline-block;
@@ -155,7 +157,7 @@ nav a:hover,
 .active,
 nav a:focus {
 	background-color: rgb(206, 32, 32);
-	color: white;
+	color: rgb(255, 255, 255);
 }
 .active {
 	cursor: default;
@@ -183,12 +185,19 @@ main {
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: center;
-	/* height: 30rem; */
 	position: relative;
 	display: flex;
 	flex-flow: column;
 	justify-content: flex-end;
 	align-items: flex-end;
+	transition: box-shadow .2s ease-in, transform .2s ease-in, opacity .2s ease-in;
+	cursor: pointer;
+	opacity: .85;
+}
+.mealCard:hover {
+	box-shadow: 0px 7px 10px 5px rgb(0 0 0 / 19%);
+	transform: translateY(-.5rem);
+	opacity: 1;
 }
 .mealCard:not(:last-child) {
 	margin-right: 1rem;
@@ -225,7 +234,7 @@ h1 {
 	text-transform: uppercase;
 }
 .topTag {
-	background-color: white;
+	background-color: rgb(255, 255, 255);
 	padding: .5em 1em;
 	transform: skew(-10deg);
 	position: relative;
