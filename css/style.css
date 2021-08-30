@@ -183,7 +183,7 @@ main {
 }
 .mealCard,
 .textCard {
-	flex-basis: 500px;
+	flex-basis: 100%;
 }
 .mealCard {
 	background-size: cover;
