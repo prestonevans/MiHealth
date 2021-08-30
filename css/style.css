@@ -234,7 +234,7 @@ h1 {
 }
 .topTag,
 .bottomTag {
-	font-size: 1.5rem;
+	font-size: 1vw;
 	text-transform: uppercase;
 }
 .topTag {
