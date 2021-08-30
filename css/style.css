@@ -225,6 +225,7 @@ h1 {
 	justify-content: space-between;
 	padding-right: 4rem;
 	padding-bottom: 2rem;
+	min-width: 17.1875rem;
 }
 .textCard p {
 	font-size: 1.7rem;
