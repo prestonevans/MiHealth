@@ -178,7 +178,7 @@ nav .logo {
 	font-weight: bold;
 }
 main {
-	padding: 3rem 6rem;
+	padding: 3rem 6vw;
 	display: flex;
 }
 .mealCard,
@@ -243,7 +243,7 @@ h1 {
 }
 .topTag,
 .bottomTag {
-	font-size: 1vw;
+	font-size: 1rem;
 	text-transform: uppercase;
 }
 .topTag {
@@ -258,7 +258,7 @@ h1 {
 .bottomTag {
 	background-color: rgb(140, 199, 39);
 	padding: .5em;
-	width: 50%;
+	min-width: 50%;
 	text-align: right;
 	transform: skew(10deg);
 	position: relative;
